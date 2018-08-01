@@ -35,7 +35,7 @@ class BikeStationTableViewCell: UITableViewCell {
     
     private func prepareView() {
         stationLabel.text = "Bukowska"
-        distanceLabel.text = "500m"
+        distanceLabel.text = "500m Bukowska 44"
         bikeImageView.image = UIImage(named: "Bike")
         bikeLabel.text = "Available Bikes"
         bikeCounterLabel.text = "15"
