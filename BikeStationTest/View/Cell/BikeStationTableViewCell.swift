@@ -24,39 +24,30 @@ class BikeStationTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         self.configure()
+        self.prepareView()
     }
     
-    var item: AnyObject? {
-        didSet {
-            if item == nil {
-                stationLabel.text = "Bukowska"
-                distanceLabel.text = "500m"
-                bikeImageView.image = UIImage(named: "Bike")
-                bikeLabel.text = "Available Slots"
-                bikeCounterLabel.text = "15"
-                lockImageView.image = UIImage(named: "Lock")
-                lockLabel.text = "Available Slots"
-                lockCounterLabel.text = "10"
-                
-            }
-        }
-    }
     
     private func configure() {
         shadowView.layer.cornerRadius = 4.0
         shadowView.applyShadow()
     }
     
+    private func prepareView() {
+        stationLabel.text = "Bukowska"
+        distanceLabel.text = "500m"
+        bikeImageView.image = UIImage(named: "Bike")
+        bikeLabel.text = "Available Bikes"
+        bikeCounterLabel.text = "15"
+        lockImageView.image = UIImage(named: "Lock")
+        lockLabel.text = "Available Places"
+        lockCounterLabel.text = "10"
+    }
+    
     func displayMovieInCell(using viewModel: BikeStationViewModel) {
         stationLabel.text = viewModel.title
         bikeCounterLabel.text = viewModel.bike
         lockCounterLabel.text = viewModel.freeBikeRacks
-    }
-
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        self.item = nil
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
