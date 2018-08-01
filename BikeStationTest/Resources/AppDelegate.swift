@@ -16,6 +16,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        window = UIWindow()
+        window?.makeKeyAndVisible()
+        let viewController = BikeStationListViewController()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
+        UIApplication.shared.statusBarStyle = .lightContent
+        UINavigationBar.appearance().barTintColor = #colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1)
+        UINavigationBar.appearance().tintColor = UIColor.white
+        
         return true
     }
 

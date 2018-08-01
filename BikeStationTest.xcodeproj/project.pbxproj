@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		2361593F2111B58600CD9B73 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361593E2111B58600CD9B73 /* AppDelegate.swift */; };
-		236159412111B58600CD9B73 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159402111B58600CD9B73 /* ViewController.swift */; };
+		236159412111B58600CD9B73 /* BikeStationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159402111B58600CD9B73 /* BikeStationListViewController.swift */; };
 		236159442111B58600CD9B73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236159422111B58600CD9B73 /* Main.storyboard */; };
 		236159462111B58700CD9B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236159452111B58700CD9B73 /* Assets.xcassets */; };
 		236159492111B58700CD9B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236159472111B58700CD9B73 /* LaunchScreen.storyboard */; };
+		236159582111BAC000CD9B73 /* BikeStationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236159572111BAC000CD9B73 /* BikeStationListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2361593B2111B58600CD9B73 /* BikeStationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeStationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2361593E2111B58600CD9B73 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		236159402111B58600CD9B73 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		236159402111B58600CD9B73 /* BikeStationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationListViewController.swift; sourceTree = "<group>"; };
 		236159432111B58600CD9B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		236159452111B58700CD9B73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		236159482111B58700CD9B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2361594A2111B58700CD9B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		236159572111BAC000CD9B73 /* BikeStationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BikeStationListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +56,71 @@
 		2361593D2111B58600CD9B73 /* BikeStationTest */ = {
 			isa = PBXGroup;
 			children = (
-				2361593E2111B58600CD9B73 /* AppDelegate.swift */,
-				236159402111B58600CD9B73 /* ViewController.swift */,
-				236159422111B58600CD9B73 /* Main.storyboard */,
-				236159452111B58700CD9B73 /* Assets.xcassets */,
-				236159472111B58700CD9B73 /* LaunchScreen.storyboard */,
-				2361594A2111B58700CD9B73 /* Info.plist */,
+				236159552111B69F00CD9B73 /* Network */,
+				236159542111B64E00CD9B73 /* View */,
+				236159532111B64800CD9B73 /* ViewController */,
+				236159522111B64400CD9B73 /* Model */,
+				236159512111B63C00CD9B73 /* ViewModel */,
+				236159502111B63600CD9B73 /* Resources */,
 			);
 			path = BikeStationTest;
+			sourceTree = "<group>";
+		};
+		236159502111B63600CD9B73 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2361593E2111B58600CD9B73 /* AppDelegate.swift */,
+				236159452111B58700CD9B73 /* Assets.xcassets */,
+				236159472111B58700CD9B73 /* LaunchScreen.storyboard */,
+				236159422111B58600CD9B73 /* Main.storyboard */,
+				2361594A2111B58700CD9B73 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		236159512111B63C00CD9B73 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		236159522111B64400CD9B73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		236159532111B64800CD9B73 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				236159402111B58600CD9B73 /* BikeStationListViewController.swift */,
+				236159562111BA8000CD9B73 /* View */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		236159542111B64E00CD9B73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		236159552111B69F00CD9B73 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		236159562111BA8000CD9B73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				236159572111BAC000CD9B73 /* BikeStationListViewController.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +183,7 @@
 			files = (
 				236159492111B58700CD9B73 /* LaunchScreen.storyboard in Resources */,
 				236159462111B58700CD9B73 /* Assets.xcassets in Resources */,
+				236159582111BAC000CD9B73 /* BikeStationListViewController.xib in Resources */,
 				236159442111B58600CD9B73 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				236159412111B58600CD9B73 /* ViewController.swift in Sources */,
+				236159412111B58600CD9B73 /* BikeStationListViewController.swift in Sources */,
 				2361593F2111B58600CD9B73 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,7 +342,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S865ZAZW4F;
-				INFOPLIST_FILE = BikeStationTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BikeStationTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +360,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S865ZAZW4F;
-				INFOPLIST_FILE = BikeStationTest/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/BikeStationTest/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
