@@ -13,6 +13,9 @@
 		236159462111B58700CD9B73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 236159452111B58700CD9B73 /* Assets.xcassets */; };
 		236159492111B58700CD9B73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 236159472111B58700CD9B73 /* LaunchScreen.storyboard */; };
 		236159582111BAC000CD9B73 /* BikeStationListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236159572111BAC000CD9B73 /* BikeStationListViewController.xib */; };
+		2361595D2111C19C00CD9B73 /* BikeStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361595B2111C19C00CD9B73 /* BikeStationTableViewCell.swift */; };
+		2361595E2111C19C00CD9B73 /* BikeStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2361595C2111C19C00CD9B73 /* BikeStationTableViewCell.xib */; };
+		236159602111C22D00CD9B73 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		236159482111B58700CD9B73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2361594A2111B58700CD9B73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		236159572111BAC000CD9B73 /* BikeStationListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BikeStationListViewController.xib; sourceTree = "<group>"; };
+		2361595B2111C19C00CD9B73 /* BikeStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationTableViewCell.swift; sourceTree = "<group>"; };
+		2361595C2111C19C00CD9B73 /* BikeStationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BikeStationTableViewCell.xib; sourceTree = "<group>"; };
+		2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +62,7 @@
 		2361593D2111B58600CD9B73 /* BikeStationTest */ = {
 			isa = PBXGroup;
 			children = (
+				236159592111C12100CD9B73 /* Extensions */,
 				236159552111B69F00CD9B73 /* Network */,
 				236159542111B64E00CD9B73 /* View */,
 				236159532111B64800CD9B73 /* ViewController */,
@@ -104,6 +111,7 @@
 		236159542111B64E00CD9B73 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2361595A2111C12F00CD9B73 /* Cell */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -121,6 +129,23 @@
 				236159572111BAC000CD9B73 /* BikeStationListViewController.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		236159592111C12100CD9B73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2361595A2111C12F00CD9B73 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2361595B2111C19C00CD9B73 /* BikeStationTableViewCell.swift */,
+				2361595C2111C19C00CD9B73 /* BikeStationTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,6 +206,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2361595E2111C19C00CD9B73 /* BikeStationTableViewCell.xib in Resources */,
 				236159492111B58700CD9B73 /* LaunchScreen.storyboard in Resources */,
 				236159462111B58700CD9B73 /* Assets.xcassets in Resources */,
 				236159582111BAC000CD9B73 /* BikeStationListViewController.xib in Resources */,
@@ -195,8 +221,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236159602111C22D00CD9B73 /* UIView+Shadow.swift in Sources */,
 				236159412111B58600CD9B73 /* BikeStationListViewController.swift in Sources */,
 				2361593F2111B58600CD9B73 /* AppDelegate.swift in Sources */,
+				2361595D2111C19C00CD9B73 /* BikeStationTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
