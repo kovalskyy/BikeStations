@@ -51,7 +51,7 @@ struct JSONDownloader {
                 completion(.Error(.responseUnsuccessful))
                 print("\(String(describing: error))")
             }
-        }
+    }
         return task
     }
 }
