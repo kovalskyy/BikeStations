@@ -18,6 +18,8 @@
 		236159602111C22D00CD9B73 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */; };
 		236159622111CBB000CD9B73 /* BikeStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159612111CBB000CD9B73 /* BikeStationModel.swift */; };
 		236159642111D18400CD9B73 /* BikeStationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159632111D18400CD9B73 /* BikeStationViewModel.swift */; };
+		236159662111D22100CD9B73 /* JSONDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159652111D22100CD9B73 /* JSONDownloader.swift */; };
+		236159682111D23500CD9B73 /* BikeStationNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159672111D23500CD9B73 /* BikeStationNetworkService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
 		236159612111CBB000CD9B73 /* BikeStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationModel.swift; sourceTree = "<group>"; };
 		236159632111D18400CD9B73 /* BikeStationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationViewModel.swift; sourceTree = "<group>"; };
+		236159652111D22100CD9B73 /* JSONDownloader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONDownloader.swift; sourceTree = "<group>"; };
+		236159672111D23500CD9B73 /* BikeStationNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationNetworkService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,6 +129,8 @@
 		236159552111B69F00CD9B73 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				236159652111D22100CD9B73 /* JSONDownloader.swift */,
+				236159672111D23500CD9B73 /* BikeStationNetworkService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -227,7 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				236159662111D22100CD9B73 /* JSONDownloader.swift in Sources */,
 				236159602111C22D00CD9B73 /* UIView+Shadow.swift in Sources */,
+				236159682111D23500CD9B73 /* BikeStationNetworkService.swift in Sources */,
 				236159412111B58600CD9B73 /* BikeStationListViewController.swift in Sources */,
 				2361593F2111B58600CD9B73 /* AppDelegate.swift in Sources */,
 				2361595D2111C19C00CD9B73 /* BikeStationTableViewCell.swift in Sources */,
