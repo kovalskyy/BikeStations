@@ -26,7 +26,6 @@ class BikeStationListViewController: UIViewController, UITableViewDelegate, UITa
         tableView.delegate = self
         tableView.register(UINib(nibName: "BikeStationTableViewCell", bundle: nil), forCellReuseIdentifier: "BikeStationTableViewCell")
         getMovies(fromService: networkService)
-        
     }
     
     // MARK: - Network
@@ -48,8 +47,6 @@ class BikeStationListViewController: UIViewController, UITableViewDelegate, UITa
             }
         }
     }
-    
-   
     
     // MARK: - UITableView
     

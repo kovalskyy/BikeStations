@@ -27,7 +27,6 @@ class BikeStationTableViewCell: UITableViewCell {
         self.prepareView()
     }
     
-    
     private func configure() {
         shadowView.layer.cornerRadius = 4.0
         shadowView.applyShadow()
