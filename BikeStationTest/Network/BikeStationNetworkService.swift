@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct BikeStationService: Gettable {
+struct BikeStationNetworkService: Gettable {
     
     let endpoint: String = "http://www.poznan.pl/mim/plan/map_service.html?mtype=pub_transport&co=stacje_rowerowe"
     

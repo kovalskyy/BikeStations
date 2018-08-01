@@ -46,6 +46,13 @@ class BikeStationTableViewCell: UITableViewCell {
         shadowView.layer.cornerRadius = 4.0
         shadowView.applyShadow()
     }
+    
+    func displayMovieInCell(using viewModel: BikeStationViewModel) {
+        stationLabel.text = viewModel.title
+        bikeCounterLabel.text = viewModel.bike
+        lockCounterLabel.text = viewModel.freeBikeRacks
+    }
+
 
     override func prepareForReuse() {
         super.prepareForReuse()

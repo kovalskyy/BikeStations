@@ -13,7 +13,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BikeStationListViewController" customModule="BikeStationTest" customModuleProvider="target">
             <connections>
                 <outlet property="tableView" destination="HXR-hA-n2f" id="Eh9-DD-U8b"/>
-                <outlet property="view" destination="HXR-hA-n2f" id="Uby-5Q-BVE"/>
+                <outlet property="view" destination="XKD-ml-XFS" id="DPB-DS-GKU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -25,8 +25,8 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <connections>
-                        <outlet property="dataSource" destination="XKD-ml-XFS" id="4E2-vK-Kf1"/>
-                        <outlet property="delegate" destination="XKD-ml-XFS" id="R4k-ku-dfw"/>
+                        <outlet property="dataSource" destination="-1" id="55L-6o-q8t"/>
+                        <outlet property="delegate" destination="-1" id="pSh-zJ-WHK"/>
                     </connections>
                 </tableView>
             </subviews>
