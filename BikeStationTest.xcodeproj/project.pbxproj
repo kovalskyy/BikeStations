@@ -16,6 +16,7 @@
 		2361595D2111C19C00CD9B73 /* BikeStationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361595B2111C19C00CD9B73 /* BikeStationTableViewCell.swift */; };
 		2361595E2111C19C00CD9B73 /* BikeStationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2361595C2111C19C00CD9B73 /* BikeStationTableViewCell.xib */; };
 		236159602111C22D00CD9B73 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */; };
+		236159622111CBB000CD9B73 /* BikeStationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236159612111CBB000CD9B73 /* BikeStationModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2361595B2111C19C00CD9B73 /* BikeStationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationTableViewCell.swift; sourceTree = "<group>"; };
 		2361595C2111C19C00CD9B73 /* BikeStationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BikeStationTableViewCell.xib; sourceTree = "<group>"; };
 		2361595F2111C22D00CD9B73 /* UIView+Shadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		236159612111CBB000CD9B73 /* BikeStationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BikeStationModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		236159522111B64400CD9B73 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				236159612111CBB000CD9B73 /* BikeStationModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				236159412111B58600CD9B73 /* BikeStationListViewController.swift in Sources */,
 				2361593F2111B58600CD9B73 /* AppDelegate.swift in Sources */,
 				2361595D2111C19C00CD9B73 /* BikeStationTableViewCell.swift in Sources */,
+				236159622111CBB000CD9B73 /* BikeStationModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
