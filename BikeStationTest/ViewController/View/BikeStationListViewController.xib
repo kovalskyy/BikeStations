@@ -12,16 +12,33 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BikeStationListViewController" customModule="BikeStationTest" customModuleProvider="target">
             <connections>
-                <outlet property="view" destination="gTU-gS-5Av" id="hXM-zD-NaL"/>
+                <outlet property="tableView" destination="HXR-hA-n2f" id="Eh9-DD-U8b"/>
+                <outlet property="view" destination="HXR-hA-n2f" id="Uby-5Q-BVE"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="gTU-gS-5Av">
+        <view contentMode="scaleToFill" id="XKD-ml-XFS">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HXR-hA-n2f">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="XKD-ml-XFS" id="4E2-vK-Kf1"/>
+                        <outlet property="delegate" destination="XKD-ml-XFS" id="R4k-ku-dfw"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-            <viewLayoutGuide key="safeArea" id="cBt-uJ-4io"/>
-            <point key="canvasLocation" x="-142" y="-271"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="HXR-hA-n2f" secondAttribute="bottom" id="62S-HF-q6F"/>
+                <constraint firstAttribute="trailing" secondItem="HXR-hA-n2f" secondAttribute="trailing" id="FTT-Jp-Cbt"/>
+                <constraint firstItem="HXR-hA-n2f" firstAttribute="leading" secondItem="XKD-ml-XFS" secondAttribute="leading" id="UJK-1o-N43"/>
+                <constraint firstItem="HXR-hA-n2f" firstAttribute="top" secondItem="XKD-ml-XFS" secondAttribute="top" id="eK0-f5-tkw"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Obf-JX-25M"/>
+            <point key="canvasLocation" x="-32" y="-209"/>
         </view>
     </objects>
 </document>

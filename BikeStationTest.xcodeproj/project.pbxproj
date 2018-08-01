@@ -62,12 +62,12 @@
 		2361593D2111B58600CD9B73 /* BikeStationTest */ = {
 			isa = PBXGroup;
 			children = (
-				236159592111C12100CD9B73 /* Extensions */,
+				236159512111B63C00CD9B73 /* ViewModel */,
+				236159522111B64400CD9B73 /* Model */,
 				236159552111B69F00CD9B73 /* Network */,
+				236159592111C12100CD9B73 /* Extensions */,
 				236159542111B64E00CD9B73 /* View */,
 				236159532111B64800CD9B73 /* ViewController */,
-				236159522111B64400CD9B73 /* Model */,
-				236159512111B63C00CD9B73 /* ViewModel */,
 				236159502111B63600CD9B73 /* Resources */,
 			);
 			path = BikeStationTest;
